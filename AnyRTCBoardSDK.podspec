@@ -91,11 +91,11 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  =  "AnyRTCBoardSDK/*.{h,m}"
+  s.source_files  =  "AnyRTCBoardSDK/**/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
 
-  s.public_header_files = "AnyRTCBoardSDK/*.{h}"
-  s.vendored_frameworks  = "AnyRTCBoardSDK/*.framework"
+  s.public_header_files = "AnyRTCBoardSDK/**/*.{h}"
+  s.vendored_frameworks  = "AnyRTCBoardSDK/**/*.framework"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -137,5 +137,5 @@ Pod::Spec.new do |s|
   # s.dependency "JSONKit", "~> 1.4"
   s.dependency "Socket.IO-Client-Swift", '~> 13.3.0'
   s.dependency "SDWebImage", '~> 4.4.2'
-
+  
 end
