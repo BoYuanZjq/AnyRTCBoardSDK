@@ -96,6 +96,7 @@ Pod::Spec.new do |s|
 
   s.public_header_files = "AnyRTCBoardSDK/**/*.{h}"
   s.vendored_frameworks  = "AnyRTCBoardSDK/**/*.framework"
+  
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
