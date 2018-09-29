@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "AnyRTCBoardSDK"
-  s.version      = "2.0.0"
+  s.version      = "2.0.1"
   s.summary      = "anyRTC白板-文档共享"
 
   # This description is used to generate tags and improve search results.
@@ -96,7 +96,7 @@ Pod::Spec.new do |s|
 
   s.public_header_files = "AnyRTCBoardSDK/**/*.{h}"
   s.vendored_frameworks  = "AnyRTCBoardSDK/**/*.framework"
-  
+
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
