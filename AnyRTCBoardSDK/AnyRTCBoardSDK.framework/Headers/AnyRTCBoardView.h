@@ -38,7 +38,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setBrushColor:(NSString*)brushColor;
 - (NSString*)getBrushColor;
 
-// 画笔粗细设置：默认:4
+// 画笔粗细设置：默认:2
 - (void)setBrushWidth:(int)brushWidth;
 - (int)getBrushWidth;
 
@@ -46,8 +46,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)undo;
 
 // 更改背景
-- (void)updateBgImageWithURL:(NSString*)imageURL;
-- (NSString*)getBGImageURL;
+- (void)updateCurrentBgImageWithURL:(NSString*)imageURL;
 
 // 当前画板截图
 - (UIImage*)getCurrentSnapShotImage;
@@ -67,10 +66,8 @@ NS_ASSUME_NONNULL_BEGIN
 // 调到某一页 (是否同步翻页）
 - (BOOL)switchPage:(int)page withSync:(BOOL)sync;
 
-
-
 // 清空所有内容（包括背景图片）
-- (void)clear;
+- (void)destoryBoard;
 // 清空涂鸦内容（不包括背景图片）
 - (void)clearAllDraws;
 // 清空当前涂鸦内容（不包括背景图片）

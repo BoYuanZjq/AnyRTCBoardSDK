@@ -36,10 +36,10 @@ typedef NS_ENUM(NSInteger, AnyRTCBoardBrushModel) {
 @protocol AnyRTCBoardViewDelegate <NSObject>
 @optional
 - (void)initBoardScuess;
-- (void)anyBoardError:(AnyRTCBoardCode)nCode;
-- (void)anyBoardServerDisconnect;
-- (void)anyBoardPageChange:(NSString*)imageUrl withCurrentPage:(int)currentPage withTotalPage:(int)totalPage;
-- (void)anyBoardDestory;
+- (void)onBoardError:(AnyRTCBoardCode)nCode;
+- (void)onBoardServerDisconnect;
+- (void)onBoardPageChange:(NSString*)imageUrl withCurrentPage:(int)currentPage withTotalPage:(int)totalPage;
+- (void)onBoardDestory;
 
 @end
 
