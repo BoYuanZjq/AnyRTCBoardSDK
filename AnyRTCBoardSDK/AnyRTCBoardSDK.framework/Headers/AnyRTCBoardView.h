@@ -49,6 +49,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)updateBgImageWithURL:(NSString*)imageURL;
 - (NSString*)getBGImageURL;
 
+// 当前画板截图
+- (UIImage*)getCurrentSnapShotImage;
+
 // 添加一页（向前加一页或向后加一页）
 - (void)addBoard:(nullable NSString*)imageURL withFont:(BOOL)isFont;
 
@@ -64,8 +67,7 @@ NS_ASSUME_NONNULL_BEGIN
 // 调到某一页 (是否同步翻页）
 - (BOOL)switchPage:(int)page withSync:(BOOL)sync;
 
-// 当前画板截图
-- (UIImage*)getCurrentSnapShotImage;
+
 
 // 清空所有内容（包括背景图片）
 - (void)clear;

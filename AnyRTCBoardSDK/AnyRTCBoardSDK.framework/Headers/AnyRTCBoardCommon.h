@@ -23,7 +23,7 @@ typedef NS_ENUM(NSInteger,AnyRTCBoardCode) {
     AnyRTCBoardCodeDatabaseError = 301         //数据库异常
 };
 
-//画笔类型
+//白板工具类型
 typedef NS_ENUM(NSInteger, AnyRTCBoardBrushModel) {
     AnyRTCBoardBrushModelNone = 0,         //无效果(触摸无响应)
     AnyRTCBoardBrushModelGraffiti,         //涂鸦
