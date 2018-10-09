@@ -35,10 +35,17 @@ typedef NS_ENUM(NSInteger, AnyRTCBoardBrushModel) {
 
 @protocol AnyRTCBoardViewDelegate <NSObject>
 @optional
+//初始化成功
 - (void)initBoardScuess;
+//白板出错
 - (void)onBoardError:(AnyRTCBoardCode)nCode;
+//白板与服务器断开连接
 - (void)onBoardServerDisconnect;
+//白板页码改变
 - (void)onBoardPageChange:(NSString*)imageUrl withCurrentPage:(int)currentPage withTotalPage:(int)totalPage;
+//白板数据改变的时间（秒级）
+- (void)onBoardDrawsChangeTimestamp:(uint32_t)timestamp;
+//画板被销毁（收到该回调，退出白板）
 - (void)onBoardDestory;
 
 @end
