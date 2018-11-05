@@ -18,8 +18,8 @@ typedef NS_ENUM(NSInteger,AnyRTCBoardCode) {
     AnyRTCBoardCodeUserIdIsNull = 3002,        //用户ID为空
     AnyRTCBoardCodeSessionPastDue = 201,       //session过期
     AnyRTCBoardCodeDeveloperInfoError = 202,   //开发者信息错误
-    AnyRTCBoardCodeDeveloperArrearage = 205,   //欠费
-    AnyRTCBoardCodeDeveloperNotOpen = 206,     //用户未开通该功能
+    AnyRTCBoardCodeDeveloperArrearage = 206,   //欠费
+    AnyRTCBoardCodeDeveloperNotOpen = 207,     //用户未开通该功能
     AnyRTCBoardCodeDatabaseError = 301         //数据库异常
 };
 
@@ -44,6 +44,8 @@ typedef NS_ENUM(NSInteger, AnyRTCBoardBrushModel) {
 - (void)onBoardServerDisconnect;
 //白板页码改变
 - (void)onBoardPageChange:(NSString*)imageUrl withCurrentPage:(int)currentPage withTotalPage:(int)totalPage;
+//消息回调
+- (void)onBoardMessage:(NSString*)message;
 //白板数据改变的时间（秒级）
 - (void)onBoardDrawsChangeTimestamp:(uint32_t)timestamp;
 //画板被销毁（收到该回调，退出白板）
