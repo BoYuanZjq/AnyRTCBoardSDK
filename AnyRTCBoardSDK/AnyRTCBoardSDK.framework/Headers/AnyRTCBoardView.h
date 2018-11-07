@@ -69,6 +69,9 @@ NS_ASSUME_NONNULL_BEGIN
 //群发消息
 - (BOOL)sendMessage:(NSString*)message;
 
+// 设置画板的背景颜色(默认白色)
+- (void)setBoardBgColor:(UIColor *)color;
+
 // 清空所有内容（包括背景图片）
 - (void)destoryBoard;
 // 清空涂鸦内容（不包括背景图片）
